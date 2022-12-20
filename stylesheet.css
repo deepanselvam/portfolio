@@ -13,6 +13,10 @@ body{
     width: 100%;
     height: 100hv;
     box-sizing: border-box;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-y: scroll;
     
 }
 span{
@@ -58,6 +62,7 @@ nav{
     .option a{
         text-decoration: none;
         color: white;
+    
         
     }
     .option{
@@ -97,6 +102,7 @@ nav{
  .option ul{
     list-style: none;
     padding: 0;
+    
  }
 
  #raja{
@@ -105,10 +111,15 @@ nav{
  .option a{
     text-decoration: none;
        color: white;
+       padding-left:325px;
+       padding-right: 320px;
+ }
+ .option a:hover{
+    border-bottom:  1px solid red;
  }
  .option ul li{
     margin-top: 15px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  
     padding-bottom: 15px;
  }
  .nav-brand{ display: flex;
@@ -142,8 +153,9 @@ nav{
 
 
 /*=================home=====================*/
+
 #home{
-    margin: 0;
+    
     width: 100%;
     height: 100vh;
     position: relative;
@@ -152,13 +164,10 @@ nav{
     text-align: center;
     background-color: #cdc9c9ae;
     font-family: 'josefin sans',sans-serif;
-    overflow: hidden;
+    overflow:hidden;
+    
 }
-.background{
-    background-size: cover;
-    position: relative;
-    margin-left: -200px;
-}
+
 .style-text{
     position: relative;
     height: 0px;
@@ -228,12 +237,11 @@ nav{
 .home-content{
     position: absolute;
     margin-right: 490px;
-    margin-top: 320px;
+    top: 330px;
 }
 .helo{
     position: absolute;
     top: -50px;
-    margin-right: 300px;
 }
 .home-content p{
     padding-top: -30px;
@@ -275,26 +283,26 @@ nav{
     
 }
 .images img{
-    height: 100%;
+    height: 500px;
+    width: 400px;
     position: absolute;
-    left: 60%;
-    bottom: 10%;
-    transform: translate(-50%);
+    left: 250px;
+    margin-top: -70px;
+    transform: translate(-20%);
     transition: bottom 1s, left 1s;
 }
 .images:hover .shape{
-    bottom: 40px;
+    bottom: 50px;
 }
 .images:hover .boy{
-    left: 45%;
+    left: 15%;
 }
-
 /*#################### media #########################*/
-@media screen and (max-width:1200px){
+@media screen and (max-width:1250px){
     .style-text{
         position: relative;
         height: 0px;
-        top: 50px;
+        top: 100px;
         left: -10px;
     }
     .style-text span{
@@ -329,7 +337,6 @@ nav{
     .home-content{
         position: absolute;
         margin-right: 420px;
-        margin-top: 250px;
     }
     .home-content p{
         
@@ -345,46 +352,32 @@ nav{
         width: 100px;
         height: 40%;
         position: absolute;
-        margin-top: 150px;
-        margin-left: 100px;
+        margin-top: 200px;
+        margin-left: 250px;
         
     }
     .images img{
         height: 350px;
         width: 270px;
         position: absolute;
-        left: 280px;
-        bottom: -10%;
+        left: 150px;
+        margin-top: -100px;
         transform: translate(-20%);
         transition: bottom 1s, left 1s;
     }
     .images:hover .shape{
-        bottom: 20px;
+        bottom: 70px;
     }
     .images:hover .boy{
         left: 5%;
     }
 }
 @media screen and (max-width:1000px){
-   
 
-    #home{
-        margin: 0;
-        width: 100%;
-        height: 100vh;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        box-sizing: border-box;
-        text-align: center;
-        background-color: #cdc9c9ae;
-        font-family: 'josefin sans',sans-serif;
-    }
-    
     .style-text{
         position: relative;
         height: 0px;
-        top: 50px;
+        top: 100px;
         left: 170px;
     }
     .style-text span{
@@ -403,7 +396,8 @@ nav{
     }
     .home-content{
         margin-right: 10px;
-        margin-top: 250px;
+        top: 300px;
+        
     }
     .home-content p{
         padding-top: 0px;
@@ -440,18 +434,7 @@ nav{
 
 }
 @media screen and (max-width:600px){
-    #home{
-        margin: 0;
-        width: 100%;
-        height: 100vh;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        box-sizing: border-box;
-        text-align: center;
-        background-color: #cdc9c9ae;
-        font-family: 'josefin sans',sans-serif;
-    }
+
     .style-text{
         position: relative;
         height: 50px;
@@ -487,7 +470,8 @@ nav{
     }
     .home-content{
         margin-right: 10px;
-        margin-top: 200px;
+        top: 250px;
+
     }
     .home-content p{
         padding-top: -10px;
@@ -503,10 +487,12 @@ nav{
         text-decoration: none;
         background-color: red;
         color: white;
-        padding: 10px;
+        padding-top: 10px;
         font-size: large;
-        width: 50%;
-        left: 100px;
+        width: 40%;
+        left: 30%;
+        right: 50%;
+        
     }
     .but:hover{
         background-color: transparent;
@@ -544,18 +530,21 @@ nav{
 .div-content{
     position: absolute;
     width: 100%;
-    margin-top: 300px; 
+     margin-top: 200px;
+    left: 50%;
+    right: 50%;
+    margin-left: -640px;
 }
 .div-content h1{
     position: absolute;
    font-size: 0.6in;
     margin-left: 580px;
-    top: -130px;
+    top: -120px;
 }
 .div-content h2{
     position: absolute;
     margin-left: 580px;
-    top: -50px; 
+    top: -60px;
 }
 #rate{
     text-decoration: none;
@@ -585,7 +574,7 @@ nav{
     width: 300px;
     height: 400px;
     left: 200px;
-    bottom: -10%  
+    margin-top: -350px;
 }
 .skill{
     display: none;
@@ -598,18 +587,15 @@ nav{
 @media screen and (max-width:1200px){
     
     .div-content{
-        position: absolute;
-        margin-top: 300px; 
-        right: 100px;
+        position: absolute; 
+        
     }   
 }
 @media screen and (max-width:1000px){
-    #about .div-content{
+    .div-content{
         width: 95%;
-         position: absolute;
-         align-items: center;
-         justify-content: center;   
-         margin-right: -80px;
+       left: 650px;
+         top: 100px;
      }
      .div-content h1{
          position: absolute;
@@ -656,7 +642,6 @@ nav{
      display: flex;
      justify-content: center;
      align-items: center;
-     top: -90px;
      margin-left: -250px;
      left: 50%;
      right: 50%; 
@@ -722,7 +707,7 @@ nav{
     margin-left: -370px;
     left: 50%;
     right: 50%;
-    top: -140px;
+    top: -620px;
   }
     .about-img{
         width: 130px;
@@ -967,16 +952,17 @@ strong{
 }
 @media screen and (max-width:1300px) {
     .pro-title{
-        top: 150px;
+        top: 80px;
     }
     .all-project{
         width: 80%;
+        height: 75%;
         display: flex;
         align-items: center;
         justify-content: center;
         overflow-y: scroll;
         background-color: rgba(109, 108, 108, 0.479);
-        top: 200px;
+        top: 140px;
         display: grid;
         grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
         gap: 50px;
@@ -1097,18 +1083,20 @@ strong{
 }
 @media screen and (max-width:1150px){
     .pro-title{
-        top: 90px;
+        top: 80px;
     }
     .all-project{
-        width: 77%;
-        height: 85%;
+        width: 80%;
+        height: 75%;
         display: flex;
         align-items: center;
         justify-content: center;
-        right: 130px;
         overflow-y: scroll;
         background-color: rgba(109, 108, 108, 0.479);
-        top: 170px;   
+        top: 130px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+        gap: 50px;
     }
 
     /*======project1=======*/
@@ -1211,17 +1199,20 @@ strong{
 }
 @media screen and (max-width:850px) {
     .pro-title{
-        top: 90px;
+        top: 80px;
     }
-    
     .all-project{
-        width: 70%;
-        height: 85%;
+        width: 80%;
+        height: 75%;
         display: flex;
         align-items: center;
         justify-content: center;
         overflow-y: scroll;
-        background-color: rgba(109, 108, 108, 0.479);          
+        background-color: rgba(109, 108, 108, 0.479);
+        top: 140px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+        gap: 50px;
     }
 
     /*======project1=======*/
@@ -1351,22 +1342,21 @@ strong{
     }
 }
 @media screen and (max-width:500px) {
+    .pro-title{
+        top: 80px;
+    }
     .all-project{
-        width: 70%;
-        height: 70%;
+        width: 80%;
+        height: 75%;
         display: flex;
         align-items: center;
         justify-content: center;
         overflow-y: scroll;
         background-color: rgba(109, 108, 108, 0.479);
-        top: 150px;    
-        left: 20%;
-        right: 50%;
-        margin-left: -20px;
-    }
-    .pro-title{
-        top: 100px;
-
+        top: 140px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+        gap: 50px;
     }
 
     /*======project1=======*/
@@ -1519,146 +1509,151 @@ strong{
 
 /*======================== contact=======================*/
 #contact{
+     position: relative;
     width: 100%;
     height: 100vh;
-    padding: 0;
-    margin: 0;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    overflow: hidden;
     background-color: #cdc9c9ae;
 }
-.con-text{
+.con-title{
     position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 70px;
-
+    margin-left: -220px;
+    margin-right: -300px;
+    left: 40%;
+    right: 50%;
+    top: 80px;
 }
-.con-text h1{
+.con-title h1{
     font-size: 4cm;
     color: rgba(94, 93, 93, 0.285);
-    left: 50%;
-    right: 50%;
+
 }
-.con-text h2{
+.con-title h2{
     position: absolute;
     font-size: 1.8cm;
     color: red;
 }
-.contact-card{
+.con-card{
     position: absolute;
-    top: 230px;
-}
 
-form{
-    position: absolute;
-    width: 300px;
-   height: 350px;
-    background-color: rgba(85, 84, 84, 0.69);
     left: 50%;
     right: 50%;
-    margin-left: -150px;
+    top: 250px;
+    margin-left: -125px;
+    width:250px;
+}
+form{
+    background-color: rgba(85, 84, 84, 0.69);
+    width: 250px;
+    height: 100%;
+    padding: 10px;
+    
 }
 .fa-user{
-    position: absolute;
-    font-size: 40px;
+    margin-left: 100px;
+    font-size: 25px;
+    top: 10px;
     color: white;
-    padding: 10px;
-    margin-left: 120px;
-}
-form input{
-    display: flex;
-    margin-top: 80px;
-    padding-right: 50px;
-    border: none;
-    background-color: transparent;
-    border-bottom: 1px solid white;
-    
 }
 ::placeholder{
     color: white;
 }
-.name{
-    position: absolute;
-    left: 50px;
+input{
+    margin-top: 20px;
+    padding-right: 30px;
+    margin-left: 20px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    color: white;
 }
-.email{
-    position: absolute;
-    top: 50px;
-    left: 50px;
-}
-form textarea{
-    position: absolute;
-    top: 180px;
-    left: 30px;
-    background-color:transparent ;
+#text{
+    width: 200px;
+    height: 100px;
+    margin-top: 30px;
+    margin-left: 14px;
+    background-color: transparent;
+    color: white;
     border: 1px solid white;
+    
 }
 .con-but{
-    position: absolute;
-    top: 300px;
-    left: 120px;
-    padding: 5px;
     background-color: red;
     border: none;
     border-radius: 10px;
     color: white;
-    padding: 8px;  
+    padding: 7px;  
+    margin-left: 90px;
+    margin-top: 10px;
 }
-#contact .socila-media{
+.con-but:hover{
+    background-color: white;
+    color: black;
+}
+
+
+
+.socila-media{
     position: absolute;
-    display: flex;
-    flex-direction: column;
-   left: 40%;
-   right: 40%;
-    text-decoration: none;
-    top: 300px;
+    top: 270px;
+    left: 50%;
+    right: 50%;
+    margin-left: -400px;
+    width: 250px;
+    
+}
+.socila-media h4{
+
+    font-size: 20px;
+    padding-top: 50px;
 }
 .fa-twitter{
     position: absolute;
     color: rgb(87, 87, 242);
-    margin-left: -370px;
+    margin-left: -65px;
     font-size: 1cm;
     top: 40px;
 }
 .fa-twitter:hover{
-  font-size: 45px;
+  font-size: 50px;
    
 }
 .fa-instagram{
     position: absolute;
      color: orangered;
     font-size: 1cm;
-    top: 100px;
-    margin-left: -370px;
+    top: 110px;
+    margin-left: -65px;
 }
 .fa-instagram:hover{
-    font-size: 45px;
+    font-size: 50px;
   }
 .fa-linkedin{
     position: absolute;
     color: blue;
-    margin-left: -370px;
-   top: 170px;
+    margin-left: -63px;
+   top: 180px;
    font-size: 1cm;
    
 }
 .fa-linkedin:hover{
-    font-size: 45px;
-}
-.socila-media h4{
-    position: relative;
-    margin-top: 50px;  
-    right: 300px;
-    width: 100%;
+    font-size: 50px;
 }
 .address{
     position: absolute;
-    top: 525px;
-    margin-left: 650px;
+    top: 500px;
+    left: 50%;
+    right: 50%;
+    margin-left: 160px;
+    
+}
+.location{
+    position: absolute;
+    width: 500px;
+
 }
 .con-video{
     position: absolute;
@@ -1674,19 +1669,17 @@ form textarea{
 
 
 @media screen and (max-width:1000px) {
-    .con-text{
-        position: absolute;
-        margin-left: 50px;
-    }
-    .con-text h1{
-        font-size: 3.5cm;
+    .con-title h1{
+        font-size: 3cm;
         color: rgba(94, 93, 93, 0.285);
+    
     }
-    .con-text h2{
+    .con-title h2{
         position: absolute;
-        font-size: 1.8cm;
+        font-size: 1.5cm;
         color: red;
     }
+    
     
     #contact .socila-media{
         position: absolute;
@@ -1694,26 +1687,35 @@ form textarea{
         flex-direction: column;
        left: 40%;
        right: 40%;
+       margin-left:-180px;
+       width: 140px;
         text-decoration: none;
     }
     .fa-twitter{
-        font-size: 0.8cm;
-        margin-left: -250px;
+        font-size: 0.7cm;
+        margin-left: -70px;
+        
     }
     .fa-twitter:hover{
-      font-size: 45px;
-       
+      font-size: 50px;
     }
     .fa-instagram{
-        font-size: 0.8cm;
-        margin-left: -250px;
+        font-size: 0.7cm;
+        margin-left: -70px;
+        margin-top: -10px;
     }
+    .fa-instagram:hover{
+        font-size: 50px;
+      }
     .fa-linkedin{
-       font-size: 0.8cm;
-       margin-left: -250px;
+       font-size: 0.7cm;
+       margin-left: -70px;
+       margin-top: -20px;
     }
+    .fa-linkedin:hover{
+        font-size: 50px;
+      }
     .socila-media h4{ 
-        right: 200px;
         font-size: 10px;
     }
     .address{
@@ -1730,16 +1732,17 @@ form textarea{
     }
    
     @media screen and (max-width:800px) {
-        .con-text h1{
-            font-size: 3cm;
-            color: rgba(94, 93, 93, 0.285);        
+        .con-title h1{
+            font-size: 2.5cm;
+            color: rgba(94, 93, 93, 0.285);
+        
         }
-      
-        .con-text h2{
+        .con-title h2{
             position: absolute;
-            font-size: 1cm;
+            font-size: 1.2cm;
             color: red;
         }
+        
         .con-text{
             margin-left: 1px;
             top: 60px;
@@ -1758,154 +1761,67 @@ form textarea{
            right: 40%;
             text-decoration: none;
             margin-top: 200px;
+            
         }
         .fa-twitter{
-            font-size: 0.8cm;
-            margin-left: -200px;
-            margin-top: -150px;
+            font-size: 1cm;
+            margin-left: 0px;
+            margin-top: -220px;
         
         }
         .fa-twitter:hover{
-          font-size: 45px;
-           
-        }
+            font-size: 50px;
+          }
         .fa-instagram{
-            font-size: 0.8cm;
-            margin-left: -200px;
-            margin-top: -130px;
+            font-size: 1cm;
+            margin-left: 0px;
+            margin-top: -210px;
         }
+        .fa-instagram:hover{
+            font-size: 50px;
+          }
         .fa-linkedin{
-            margin-left: -200px;
-            margin-top: -130px;
+            font-size: 1cm;
+            margin-left: 0px;
+            margin-top: -190px;
         }
+        .fa-linkedin:hover{
+            font-size: 50px;
+          }
         .address{
             font-size: 9px;
-            margin-left: 400px;
+            margin-left: 150px;
             margin-right: -80px;
             
         }
         .con-video{
-            top: 160px;
-            margin-left: -10px;
+            
+            margin-left: 150px;
         }
 
         .handshaking{
             width: 170px;
-            margin-left: -50px;
-        }
-       
-    }
-    @media screen and (max-width:610px) {
-        .contact-card{
-            top: 220px;
-        }
-        
-        .con-text h1{
-            font-size: 1.5cm;
-            color: rgba(94, 93, 93, 0.285);
-            padding: 5px;
-        
-        }
-        .con-text h2{
-            position: absolute;
-            font-size: 0.7cm;
-            color: red;
-        }
-        #con-textarea{
-            width: 200px;
-            height: 90px;
-            margin-left: 10px;
-            padding: 5px;
-        }
-        .con-text{
             
-            margin-bottom: 650px;
-        }
-        .socila-media h4{
-            display: none;
-        }
-        .address{
-           top: 590px;
-           margin-left: 70px;
-        }
-        #contact .socila-media{
-            position: absolute;
-            display: flex;
-            flex-direction: column;
-           left: 40%;
-           right: 40%;
-            text-decoration: none;
-            margin-top: 400px;
-        }
-        .fa-twitter{
-            font-size: 0.7cm;
-            margin-left: -25px;
-        }
-        .fa-twitter:hover{
-          font-size: 45px;
-           
-        }
-        .fa-instagram{
-            font-size: 0.7cm;
-            margin-left: -80px;
-            margin-top: -210px;
-        }
-        .fa-linkedin{
-            font-size: 0.7;
-            margin-left: -135px;
-            margin-top: -280px;
-        }
-        .con-video{
-            top: 120px;
-            margin-left: -5px;
-        }
-        .handshaking{
-            width: 130px;
         }
        
-        
     }
-    @media screen and (max-width:380px) {
-        .contact-card{
-            top: 220px;
-            margin-right: -70px;
-        }
-        form{
-            width: 230px;
-        }
-        form input{
-            padding-right: 0px; 
-        }
-        .fa-user{
-            left: -25px;
-        }
- 
-        .name{
-            position: absolute;
-            left: 50px;
-        }
-        .email{
-            position: absolute;
-            top: 50px;
-            left: 50px;
-        }
-        form textarea{
-            position: absolute;
-            top: 180px;
-            left: 5px;
-            background-color:transparent ;
-            border: 1px solid white;
+    @media screen and (max-width:660px) {
+        .con-card{
+            top: 240px;
         }
         
-        .con-text h1{
-            font-size: 1.5cm;
+        .con-title{
+            margin-left: -250px;
+            top: 60px;
+        }
+        .con-title h1{
+            font-size: 2cm;
             color: rgba(94, 93, 93, 0.285);
-            padding: 5px;
         
         }
-        .con-text h2{
+        .con-title h2{
             position: absolute;
-            font-size: 0.7cm;
+            font-size: 1cm;
             color: red;
         }
         #con-textarea{
@@ -1923,8 +1839,8 @@ form textarea{
         }
         .address{
             font-size: 7px;
-           top: 590px;
-           margin-left: 50px;
+           top: 570px;
+           margin-left: 10px;
         }
         #contact .socila-media{
             position: absolute;
@@ -1936,27 +1852,91 @@ form textarea{
             margin-top: 400px;
         }
         .fa-twitter{
-            font-size: 20px;
-            margin-left: -5px;
+            font-size: 0.7cm;
+            margin-left: 30px;
+            margin-top: -420px;
+        
+        }
+        .fa-twitter:hover{
+          font-size: 30px;
+           
+        }
+        .fa-instagram{
+            font-size: 0.7cm;
+            margin-left: 30px;
+            margin-top: -410px;
+        }
+        .fa-instagram:hover{
+            font-size: 30px;
+             
+          }
+        .fa-linkedin{
+            font-size: 0.7cm;
+            margin-left: 30px;
+            margin-top: -400px;
+        }
+        .fa-linkedin:hover{
+            font-size: 30px;
+             
+          }
+        .con-video{
+            top: 140px;
+            margin-left: -40px;
+        }
+        .handshaking{
+            width: 110px;
+            
+        }
+       
+        
+    }
+    @media screen and (max-width:380px) {
+        .con-title{
+            margin-left: -250px;
+        }
+        .con-title h1{
+            font-size: 1.5cm;
+            color: rgba(94, 93, 93, 0.285);
+        
+        }
+        .con-title h2{
+            position: absolute;
+            font-size: 0.6cm;
+            color: red;
+        }
+        
+        #contact .socila-media{
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+           left: 40%;
+           right: 40%;
+            text-decoration: none;
+            margin-top: 400px;
+        }
+        .fa-twitter{
+            font-size: 12px;
+          top: 320px;
+          left: 140px;
         }
         .fa-twitter:hover{
           font-size: 45px;
            
         }
         .fa-instagram{
-            font-size: 20px;
-            margin-left: -40px;
-            margin-top: -210px;
+            font-size: 12px;
+            top: 310px;
+            left: 110px;
             
         }
         .fa-linkedin{
-            font-size: 20px;
-            margin-left: -75px;
-            margin-top: -280px;
+            font-size: 12px;
+            top: 300px;
+            left: 80px;
         }
         .con-video{
-            top: 120px;
-            margin-left: -5px;
+            top: 130px;
+            margin-left: -50px;
         }
         .handshaking{
             width: 130px;
