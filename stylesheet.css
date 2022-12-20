@@ -13,8 +13,6 @@ body{
     width: 100%;
     height: 100hv;
     box-sizing: border-box;
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
     overflow-x: hidden;
     overflow-y: scroll;
     
@@ -111,15 +109,11 @@ nav{
  .option a{
     text-decoration: none;
        color: white;
-       padding-left:325px;
-       padding-right: 320px;
- }
- .option a:hover{
-    border-bottom:  1px solid red;
+       padding-right: 620px;
  }
  .option ul li{
     margin-top: 15px;
-  
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     padding-bottom: 15px;
  }
  .nav-brand{ display: flex;
@@ -148,12 +142,12 @@ nav{
  .hide{
     display: none;
  }
-
+ 
 }
 
 
-/*=================home=====================*/
 
+/*=================home=====================*/
 #home{
     
     width: 100%;
@@ -240,8 +234,12 @@ nav{
     top: 330px;
 }
 .helo{
-    position: absolute;
-    top: -50px;
+    
+    padding-bottom: 20px;
+    left: 50%;
+    right: 50%;
+    margin-right: 350px;
+    
 }
 .home-content p{
     padding-top: -30px;
@@ -396,7 +394,7 @@ nav{
     }
     .home-content{
         margin-right: 10px;
-        top: 300px;
+        top: 270px;
         
     }
     .home-content p{
@@ -438,13 +436,12 @@ nav{
     .style-text{
         position: relative;
         height: 50px;
-        top: 100px;
+        top: 80px;
         left: 70px;
         
     }
     .helo{
-        
-        display: none;
+        display: none;    
     }
     .style-text span{
         width: 100%;
@@ -470,7 +467,7 @@ nav{
     }
     .home-content{
         margin-right: 10px;
-        top: 250px;
+        top: 200px;
 
     }
     .home-content p{
