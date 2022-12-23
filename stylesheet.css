@@ -669,7 +669,8 @@ nav{
         position: absolute;
         align-items: center;
         justify-content: center;   
-        margin-right: -80px;
+        margin-left: -650px;
+        padding: 5px;
     }
     .div-content h1{
         position: absolute;
@@ -2022,6 +2023,16 @@ input:checked~label{
 .thanking h2{
     margin-left: 90px;
 }
+ .icon a{
+    background-color: rebeccapurple;
+    position: absolute;
+    top: 300px;
+    width: 230px;
+    height: 70px;
+    margin-left: -120px;
+    opacity: 0;
+    cursor: pointer;
+ }
 
 @media screen and (max-width:600px){
     #rating{
