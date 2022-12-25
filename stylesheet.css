@@ -1209,7 +1209,7 @@ strong{
         top: 80px;
     }
     .all-project{
-        width: 80%;
+        width: 70%;
         height: 75%;
         display: flex;
         align-items: center;
@@ -1350,17 +1350,17 @@ strong{
 }
 @media screen and (max-width:500px) {
     .pro-title{
-        top: 80px;
+        top: 90px;
     }
     .all-project{
-        width: 80%;
+        width: 70%;
         height: 75%;
         display: flex;
         align-items: center;
         justify-content: center;
         overflow-y: scroll;
         background-color: rgba(109, 108, 108, 0.479);
-        top: 140px;
+        top: 120px;
         display: grid;
         grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
         gap: 50px;
@@ -1375,7 +1375,7 @@ strong{
         width: 200px;
         height:auto;
         background-color:transparent;
-        top: 50px;
+        top: 40px;
         box-shadow: 2,12,5,.7(black);
         z-index: 100px;
         transition: transform 0.6s; 
@@ -1390,9 +1390,9 @@ strong{
 }
 .image1{
     
-    height: 100px;
-    width: 150px;
-    right: 0px;    
+    height: 200px;
+    width: 50px;
+    
 }
 .project1 p{
     display: flex;
@@ -1412,7 +1412,7 @@ strong{
         width: 200px;
         height:auto;
         background-color:transparent;
-        top: 230px;
+        top: 220px;
         box-shadow: 2,12,5,.7(black);
         z-index: 100px;
         transition: transform 0.6s; 
@@ -1570,12 +1570,15 @@ form{
 }
 input{
     margin-top: 20px;
-    padding-right: 30px;
     margin-left: 20px;
     border: none;
     background-color: transparent;
     border-bottom: 1px solid white;
     color: white;
+    
+}
+.user-name{
+    margin-left: -80px;
 }
 #text{
     width: 200px;
@@ -1584,8 +1587,7 @@ input{
     margin-left: 14px;
     background-color: transparent;
     color: white;
-    border: 1px solid white;
-    
+    border: 1px solid white; 
 }
 .con-but{
     background-color: red;
@@ -1899,7 +1901,7 @@ input{
     }
     @media screen and (max-width:380px) {
         .con-title{
-            margin-left: -250px;
+            margin-left: -275px;
         }
         .con-title h1{
             font-size: 1.5cm;
