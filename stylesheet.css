@@ -1519,7 +1519,7 @@ strong{
      position: relative;
     width: 100%;
     height: 100vh;
-    overflow-x: hidden;
+    overflow-x:hidden ;
     background-color: #cdc9c9ae;
 }
 .con-title{
@@ -1552,6 +1552,17 @@ strong{
     margin-left: -125px;
     width:250px;
 }
+.user-name{
+    position: absolute;
+    top: 40px;
+    margin-top: 20px;
+}
+.your-gmail{
+    position: absolute;
+    top: 70px;
+
+    margin-left: 50px;
+}
 form{
     background-color: rgba(85, 84, 84, 0.69);
     width: 250px;
@@ -1560,7 +1571,7 @@ form{
     
 }
 .fa-user{
-    margin-left: 100px;
+    margin-left: 110px;
     font-size: 25px;
     top: 10px;
     color: white;
@@ -1583,7 +1594,7 @@ input{
 #text{
     width: 200px;
     height: 100px;
-    margin-top: 30px;
+    margin-top: 50px;
     margin-left: 14px;
     background-color: transparent;
     color: white;
@@ -1814,15 +1825,84 @@ input{
         }
        
     }
-    @media screen and (max-width:660px) {
-        .con-card{
-            top: 240px;
+    @media screen and (max-width:700px) {
+        .con-title h1{
+            font-size: 2.5cm;
+            color: rgba(94, 93, 93, 0.285);
+        
+        }
+        .con-title h2{
+            position: absolute;
+            font-size: 1.2cm;
+            color: red;
         }
         
         .con-title{
-            margin-left: -250px;
-            top: 60px;
+            margin-right: -280px;
+            top:80px;
+            
         }
+        .con-card{
+            top: 270px;
+
+        }
+        .socila-media h4{
+            display: none;
+        }
+        #contact .socila-media{
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+           left: 40%;
+           right: 40%;
+            text-decoration: none;
+            margin-top: 200px;
+            
+        }
+        .fa-twitter{
+            font-size: 1cm;
+            margin-left: 0px;
+            margin-top: -220px;
+        
+        }
+        .fa-twitter:hover{
+            font-size: 50px;
+          }
+        .fa-instagram{
+            font-size: 1cm;
+            margin-left: 0px;
+            margin-top: -210px;
+        }
+        .fa-instagram:hover{
+            font-size: 50px;
+          }
+        .fa-linkedin{
+            font-size: 1cm;
+            margin-left: 0px;
+            margin-top: -190px;
+        }
+        .fa-linkedin:hover{
+            font-size: 50px;
+          }
+        .address{
+            font-size: 9px;
+            margin-left: 150px;
+            margin-right: -80px;
+            
+        }
+        .con-video{
+            top: 180px;
+            margin-left: -30px;
+        }
+
+        .handshaking{
+            width: 100px;
+            
+        }
+    
+        
+    }
+    @media screen and (max-width:650px) {
         .con-title h1{
             font-size: 2cm;
             color: rgba(94, 93, 93, 0.285);
@@ -1833,24 +1913,19 @@ input{
             font-size: 1cm;
             color: red;
         }
-        #con-textarea{
-            width: 200px;
-            height: 90px;
-            margin-left: 10px;
-            padding: 5px;
-        }
-        .con-text{
+        
+        .con-title{
+            margin-right: -255px;
+            top:80px;
             
-            margin-bottom: 650px;
+        }
+        .con-card{
+            top: 250px;
+
         }
         .socila-media h4{
             display: none;
         }
-        .address{
-            font-size: 7px;
-           top: 570px;
-           margin-left: 10px;
-        }
         #contact .socila-media{
             position: absolute;
             display: flex;
@@ -1858,74 +1933,11 @@ input{
            left: 40%;
            right: 40%;
             text-decoration: none;
-            margin-top: 400px;
-        }
-        .fa-twitter{
-            font-size: 0.7cm;
-            margin-left: 30px;
-            margin-top: -420px;
-        
-        }
-        .fa-twitter:hover{
-          font-size: 30px;
-           
-        }
-        .fa-instagram{
-            font-size: 0.7cm;
-            margin-left: 30px;
-            margin-top: -410px;
-        }
-        .fa-instagram:hover{
-            font-size: 30px;
-             
-          }
-        .fa-linkedin{
-            font-size: 0.7cm;
-            margin-left: 30px;
-            margin-top: -400px;
-        }
-        .fa-linkedin:hover{
-            font-size: 30px;
-             
-          }
-        .con-video{
-            top: 140px;
-            margin-left: -40px;
-        }
-        .handshaking{
-            width: 110px;
-            
-        }
-       
-        
-    }
-    @media screen and (max-width:380px) {
-        .con-title{
-            margin-left: -275px;
-        }
-        .con-title h1{
-            font-size: 1.5cm;
-            color: rgba(94, 93, 93, 0.285);
-        
-        }
-        .con-title h2{
-            position: absolute;
-            font-size: 0.6cm;
-            color: red;
-        }
-        
-        #contact .socila-media{
-            position: absolute;
-            display: flex;
-            flex-direction: column;
-           left: 40%;
-           right: 40%;
-            text-decoration: none;
-            margin-top: 400px;
+            margin-top: 180px;
         }
         .fa-twitter{
             font-size: 12px;
-          top: 320px;
+          top: 330px;
           left: 140px;
         }
         .fa-twitter:hover{
@@ -1934,7 +1946,7 @@ input{
         }
         .fa-instagram{
             font-size: 12px;
-            top: 310px;
+            top: 320px;
             left: 110px;
             
         }
@@ -1943,13 +1955,94 @@ input{
             top: 300px;
             left: 80px;
         }
+        .address{
+            font-size: 6px;
+            margin-left: 30px;
+            margin-top: 50px;
+            
+        }
         .con-video{
-            top: 130px;
-            margin-left: -50px;
+            top: 160px;
+            margin-left: -40px;
         }
+
         .handshaking{
-            width: 130px;
+            width: 100px;
+            
         }
+    
+        
+    }
+    @media screen and (max-width:380px) {
+        .con-title h1{
+            font-size:1.5cm;
+            color: rgba(94, 93, 93, 0.285);
+        
+        }
+        .con-title h2{
+            position: absolute;
+            font-size: 0.5cm;
+            color: red;
+        }
+        
+        .con-title{
+            margin-right: -255px;
+            top:80px;
+            
+        }
+        .con-card{
+            top: 250px;
+
+        }
+        .socila-media h4{
+            display: none;
+        }
+        #contact .socila-media{
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+           left: 40%;
+           right: 40%;
+            text-decoration: none;
+            margin-top: 180px;
+        }
+        .fa-twitter{
+            font-size: 12px;
+          top: 330px;
+          left: 140px;
+        }
+        .fa-twitter:hover{
+          font-size: 45px;
+           
+        }
+        .fa-instagram{
+            font-size: 12px;
+            top: 320px;
+            left: 110px;
+            
+        }
+        .fa-linkedin{
+            font-size: 12px;
+            top: 300px;
+            left: 80px;
+        }
+        .address{
+            font-size: 6px;
+            margin-left: 30px;
+            margin-top: 50px;
+            
+        }
+        .con-video{
+            top: 150px;
+            margin-left: -40px;
+        }
+
+        .handshaking{
+            width: 100px;
+            
+        }
+    
+       
     }
   
   
